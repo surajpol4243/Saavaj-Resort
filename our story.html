@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #d4ca85;
+  font-family: baskervillemtw01-smbdit, serif
+}
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.card{
+  background-color: white;
+      width: 996px;
+      height: 460px;
+      padding-top: 33px;
+      position: relative;
+      border:1px solid white;
+      border-radius: 6px
+}
+.contentBox{
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 220px;
+  padding-right: 10px;
+  background-color: #d4ca85;
+  float: right;
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 75%;
+  text-align: left;
+  font-family: baskervillemtw01-smbdit;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 3px 3px #888888;
+}
+.imgBox{
+  z-index: 1;
+  position: absolute;
+  padding-left: 20px;
+}
+.button{
+  z-index: 1;
+  position: absolute;
+  background-color: #d4ca85;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 100px;
+}
+.button:hover{
+  background-color: black;
+  color: white;
+}
+.footer{
+      background-color: white;
+      width: 100%;
+      height: 370px;
+    }
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="saawajhead.png" style="width:100%;height: 400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="nature.png" style="width:100%;height: 400px">
+</div>
+
+<div class="mySlides fade">
+  <img src="house.png" style="width:100%;height: 400px">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<center>
+<div class="card">
+  <div class="imgBox">
+    <img src="lobby.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">Vrindavan - The Lobby</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        <span>‘Vrindavan’- the lobby describes the sense of purity and serenity that our guest experience on visiting Saavaj Resort. It induces a touch of tranquil in our guests’ minds and souls.</span><br><span>The reception is decorated with indoor plants and lushness which lets our guests experience the feeling of ‘Van’ (forest) and the hospitality of the staff ensures the touch of ‘values’ like politeness and humility.</span>
+      </p>
+        <a href="" class="button"> 
+          Experiance Vrindavan!
+        </a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="card">
+  <div class="imgBox">
+    <img src="osari.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">Osari - The Entre Lounge</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        As our guests proceed from reception, the hut-like seating arena is an eye-catching element of Saavaj Resort. It is used to accommodate guests during check-in and/or before heading to the rooms, serve welcome drinks at weddings, etc. Moreover, it is a green area for guests to use at their leisure. Owing to its multi-utility, we call it ‘Osari’ as it lets us redesign usage of the place as per need. In addition to this, the word translates to ‘Gallery’ or ‘Veranda’ in the local language.
+      </p>
+        <a href="" class="button"> 
+          Experiance Osari!
+        </a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="card">
+  <div class="imgBox">
+    <img src="baithak.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">Baithak- The Seating Lounge</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+       One thing which is common in all six categories of accommodation that we offer to our guests at Saavaj is- an area outside the rooms and cottages with unique furniture where guests can sit and enjoy their time along with drinks and snacks from the IRD menu.
+‘Baithak- the seating lounge’ comes with its unique essence as it has been used to describe the same purpose for ages.
+      </p>
+        <a href="" class="button"> 
+          Experiance Baithak!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="greenlaunge.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">The Green Lounge</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        'The Green Lounge' is a lush green, open and multi-utility place guest-engagement during their stay to create memorable experiences on the property. In season, we provide indoor games, eco-gym, and other activities to our guests to engage in.<br>The lounge is ornated with versatile flora with a touch of comfortable seating space for our guests. We encourage our guests to use the lounge at their leisure and invite feedback to make our services better.
+      </p>
+        <a href="" class="button"> 
+          Experiance Green Lounge!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="tulsi.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">Tulsi- the restaurant</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        ‘Tulsi’ denotes purity which is the true essence of the food we provide at our restaurant at Saavaj. It induces a sense of pureness and serenity in the guests’ minds as the same is reflected by the ambiance of the restaurant.<br><br>Saavaj offers the specialty restaurant 'Tulsi' with authentic cuisine to our guests. Our food is gaining applauds from all our guests and we are thankful for their love and kindness.
+      </p>
+        <a href="" class="button"> 
+          Experiance Tulsi!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="prithvi.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">Prithvi- the ballroom</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+       Saavaj Resorts offers the only ‘pillarless’ banquet in the whole region which can accommodate such a large number of people. Hence it is called ‘Prithvi’ - meaning the earth which is the only planet in our solar system to accommodate such a large number of living elements.<br><br>Prithvi has seen numerous happy gatherings and we hope to have many many more. Our service team at Prithvi is always ready to assist you with anything to make your events memorable.
+      </p>
+        <a href="" class="button"> 
+          Experiance Prithvi!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="vaayu.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">Vaayu- the amphitheater</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        One unique element at Saavaj is its amphitheater which is used for many engagement activities- from Stargazing to cultural performances.
+The name 'Vaayu' perfectly describes our amphitheater as it a place of ‘open-air’ and under the sky. It is one of the five life elements and complements ‘Prithvi’- the ballroom at Saavaj.
+      </p>
+        <a href="" class="button"> 
+          Experiance Vaayu!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="dairy.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">‘Organic Dairy’ at Saavaj:</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        Saavaj resort maintains its own Dairy farms, where many healthy Bhadawari Cows are taken care of. The milk from ‘Bhadwari’ cows has a well-known medicinal value as told in the anecdotes by the local people. The food preparations are, hence, inherently pure and organic and we invite our guests to visit our farms. We also keep some of the cattle on the property to make it easy for the guests. The resort has a separate staff to take care of the cows and maintains proper hygiene standards while preserving the natural and indigenous essence.
+      </p>
+        <a href="" class="button"> 
+          Experiance Dairy!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="sprout.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 150px">‘Zero-KM Sprout Strategy’ at Saavaj:</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        The resort has its own vegetable and fruit farms that produce the organic harvest. Ingredients like garlic, lemongrass, mango, chikoo, peanuts and many more can be seen in the farms across the year. We invite our guests to experience the lost essence of farms and fields as a part of their stay at Saavaj. Acquiring ingredients from nearby farms ensures fresh products and reduces our Carbon-print as no transport is required- ultimately making Saavaj a planet positive establishment.
+      </p>
+        <a href="" class="button"> 
+          Experiance 0-km sprout!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="exp.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 135px">‘Immersive Experience’ by Saavaj:</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        This best resort in Sasan Gir is located at a naturally located region- surrounded by a water body, lushness, farms, fields, orchards and ancient railway tracks. In times where urbanization has made natural experiences rare, we offer a unique ‘Immersive Experience’ to our guests which includes but is not limited to:
+-Property tour with ‘Jugaad Chacha’
+-Life of a farmer at Sasan Gir
+-Plantation and agricultural field experience
+-Limba Chai (Lemon Tea)- freshly made at the farm
+      </p>
+        <a href="" class="button"> 
+          Immersive Experience!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="mango.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 80px">‘Mango Orchards’ at Saavaj:</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        The resort offers huge Mango orchards where guests are invited for visits and seasonal fruit-picking. The lost essence of picking fruits directly from the trees, as our previous generations used to do, can be experienced at Saavaj. We offer 7 acres of orchards filled with Mango trees which are thriving since more than 100 years. 
+      </p>
+        <a href="" class="button"> 
+          Experiance th orchads!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="jharukha.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 90px">‘Dine at Jharonka’ by Saavaj:</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+       ‘Jharonka’ is a unique seating arena at Saavaj which provides a panoramic view of a beautiful check-dam engulfed by the lushness. Inspired by an old routine of people at Gir, where they spot lions and other wild animals from an elevated place. We offer exclusive meals and entertain on-demand requests, making it an ideal place for a memorable meal
+<br>-Breakfast at Sunrise
+<br>-High-tea at Sunset
+<br>-Sunrise/Sunset View
+      </p>
+        <a href="" class="button"> 
+          Experiance Jharonka!
+        </a>
+    </div>
+  </div>
+</div><br>
+<div class="card">
+  <div class="imgBox">
+    <img src="starts.png" width="400px" height="400px" style="border-radius: 50%">
+  </div>
+  <div style="position: absolute;">
+    <div>
+    <h2 style="padding-left: 20px">Star gazing’ at Saavaj:</h2>
+    </div>
+    <div class="contentBox">
+      <p>
+        The resort, unlike the sky in our urban cities, witnesses a clear sky around the year with mesmerizing stars.Saavaj offers an exclusive telescopic view with a comfortable space and snacks where you can enjoy yourself looking at the stars. ‘Vaayu’ the amphitheater at Saavaj makes for an excellent place to carry out various activities like:
+<br>-Star Gazing
+<br>-Telescopic Star Gazing
+<br>-Meal under the sky
+      </p>
+        <a href="" class="button"> 
+          Experiance Star gazing!
+        </a>
+    </div>
+  </div>
+</div>
+</center>
+<div class="footer">
+    <center>
+      <div style="display: table;clear: both;padding-top: 10px">
+        <div style="float: left;margin-right: 10px"><img src="fb.png"></div>
+        <div style="float: left;"><img src="insta.png"></div>
+      </div>
+      <div style="display: table;clear: both;padding-top: 10px">
+        <div style="float: left;margin-right: 10px"><p style="font-family: din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif">📞 +91 87589 90480</p></div>
+        <div style="float: left;"><a href=""><p style="font-family: din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif">📧 sky@gmail.com</p></a></div>
+      </div>
+      <div style="display: table;clear: both;padding-top: 5px">
+        <div style="float: left;margin-right: 10px"><a href="">Contact Us</a> &nbsp&nbsp&nbsp&nbsp|</div>
+        <div style="float: left;margin-right: 10px"><a href="">Terms & Conditions</a>&nbsp&nbsp&nbsp&nbsp|</div>
+        <div style="float: left;margin-right: 10px"><a href="">Reservation Policy </a>&nbsp&nbsp&nbsp&nbsp|</div>
+        <div style="float: left;margin-right: 10px"><a href="">Privacy policy</a></div>
+      </div>
+      <div style="padding-top: 20px">
+        <img src="sawaj.png">
+      </div>
+      
+    </center>
+  </div>
+</center>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
